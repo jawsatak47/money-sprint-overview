@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JawsAtak Money Engine</title>
+<style>
+:root{--bg:#0b0b0d;--card:#151519;--card2:#1c1c22;--text:#f3f3f5;--muted:#a9a9b2;--line:#303038;--accent:#f4c542;--good:#65d68a;--danger:#ff6b6b}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;line-height:1.45}
+header{padding:32px 20px 22px;position:sticky;top:0;background:rgba(11,11,13,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:5}
+.wrap{max-width:1100px;margin:auto;padding:0 18px} h1{margin:0;font-size:clamp(28px,5vw,48px);letter-spacing:-1.5px} h2{margin-top:0} h3{margin-bottom:8px}.tag{display:inline-block;color:#111;background:var(--accent);font-weight:800;padding:5px 9px;border-radius:999px;font-size:12px;margin-bottom:10px}
+.subtitle{color:var(--muted);max-width:760px}.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+button,input{font:inherit} button{background:var(--card2);color:var(--text);border:1px solid var(--line);padding:9px 13px;border-radius:9px;cursor:pointer}button:hover{border-color:var(--accent)}
+main{padding:26px 0 60px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px}.card{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:18px}.card h3{font-size:19px}.muted{color:var(--muted)}.money{font-size:25px;font-weight:850;color:var(--accent)}ul{padding-left:20px}.pill{font-size:12px;border:1px solid var(--line);padding:4px 7px;border-radius:999px;color:var(--muted)}
+section{margin:30px 0}.hero{background:linear-gradient(135deg,#17171c,#101014);border:1px solid var(--line);border-radius:18px;padding:22px}.formula{font-size:clamp(19px,3vw,27px);font-weight:800;margin:12px 0}.engine{display:flex;justify-content:space-between;gap:14px;align-items:flex-start}.priority{color:var(--good);font-weight:800}.table{width:100%;border-collapse:collapse}.table th,.table td{border-bottom:1px solid var(--line);padding:11px 8px;text-align:left}.table th{color:var(--muted);font-size:13px}.experiment{border-left:4px solid var(--accent)}.check{display:flex;gap:9px;align-items:flex-start;margin:9px 0}.check input{margin-top:4px;accent-color:var(--accent)}.score{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}.bar{height:8px;background:#292930;border-radius:99px;overflow:hidden;margin-top:5px}.fill{height:100%;background:var(--accent);width:var(--w)}.footer{text-align:center;color:var(--muted);padding-top:25px}.hidden{display:none}
+@media(max-width:600px){header{position:relative}.engine{display:block}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<span class="tag">JAWSATAK • CAPITAL → CASH → ASSETS</span>
+<h1>Money Engine</h1>
+<p class="subtitle">A go-to decision tool for turning limited capital, existing skills, artwork, relationships and intellectual property into more revenue.</p>
+<div class="toolbar">
+<button onclick="show('all')">All</button><button onclick="show('now')">Cash Now</button><button onclick="show('later')">Cash Later</button><button onclick="show('asset')">Assets</button><button onclick="window.print()">Print / PDF</button>
+</div>
+</div>
+</header>
+
+<main class="wrap">
+
+<section class="hero">
+<h2>The Operating Principle</h2>
+<div class="formula">Don't spend money trying to look like a bigger business.</div>
+<p>Use capital to create things that can produce money. Every dollar should have a believable path back to more dollars.</p>
+<div class="formula">Cash Now → Cash Later → Asset Building</div>
+<p class="muted">Cash-now work finances the machine. Scalable products grow it. IP, audience, systems and brands make the machine valuable.</p>
+</section>
+
+<section>
+<h2>1. The 7 Money Engines</h2>
+<div class="grid">
+
+<div class="card engine now">
+<div><h3>⚡ Fast Cash</h3><p>Low/no capital. Sell skills immediately.</p><ul><li>Custom paintings & lettering</li><li>Graffiti pieces & portraits</li><li>Characters & illustrations</li><li>Album covers, logos, flyers</li><li>Signs & window painting</li><li>Gold leaf & restoration</li><li>Custom skateboards / apparel</li></ul></div>
+<span class="priority">NOW</span></div>
+
+<div class="card engine later">
+<div><h3>🖨️ One Artwork → Many Products</h3><p>Turn one finished image into an asset.</p><ul><li>Original</li><li>Prints & posters</li><li>Stickers & cards</li><li>Shirts & merch</li><li>Digital downloads</li><li>Commercial licenses</li></ul></div>
+<span class="priority">LEVERAGE</span></div>
+
+<div class="card engine later">
+<div><h3>🦅 Commercial Illustration</h3><p>Especially strong for animal / educational artwork.</p><ul><li>Wildlife organizations</li><li>Museums & nature centers</li><li>Schools & publishers</li><li>Outdoor brands</li><li>Tourism & parks</li><li>Conservation groups</li></ul></div>
+<span class="priority">HIGH</span></div>
+
+<div class="card engine asset">
+<div><h3>🧠 QuarkForce Education</h3><p>Build once, sell repeatedly.</p><ul><li>QuarkUniversity classes</li><li>Drawing & graffiti lessons</li><li>Lettering courses</li><li>Artist business education</li><li>Workbooks & PDFs</li><li>Memberships</li></ul></div>
+<span class="priority">SCALE</span></div>
+
+<div class="card engine asset">
+<div><h3>💻 Tiny Digital Products</h3><p>Small tools before expensive software.</p><ul><li>Mural Pitch Generator</li><li>Artist Pricing Calculator</li><li>Opportunity Radar</li><li>QuarkZine archive</li><li>Proposal templates</li><li>Artist business tools</li></ul></div>
+<span class="priority">SCALE</span></div>
+
+<div class="card engine later">
+<div><h3>🎪 Events</h3><p>Events are IP + audience + sponsorship platforms.</p><ul><li>Artist entry fees</li><li>Vendor fees</li><li>Sponsorships</li><li>Tickets</li><li>Merchandise</li><li>Art auctions</li><li>Video/content</li></ul></div>
+<span class="priority">BUILD</span></div>
+
+<div class="card engine later">
+<div><h3>🤝 Relationships</h3><p>Your network is an asset. Package it into offers.</p><ul><li>Event sponsorships</li><li>Brand collaborations</li><li>Material partnerships</li><li>Promotional campaigns</li><li>Creative services</li></ul></div>
+<span class="priority">LEVERAGE</span></div>
+
+</div>
+</section>
+
+<section>
+<h2>2. Your Price Ladder</h2>
+<div class="grid">
+<div class="card"><div class="money">$40</div><p>Mini drawing / small custom</p></div>
+<div class="card"><div class="money">$60</div><p>Custom name / lettering</p></div>
+<div class="card"><div class="money">$75</div><p>Character / simple portrait</p></div>
+<div class="card"><div class="money">$100</div><p>Detailed commission / art piece</p></div>
+<div class="card"><div class="money">$150–250</div><p>Premium illustration</p></div>
+<div class="card"><div class="money">$500+</div><p>Major commission / commercial project</p></div>
+</div>
+<p class="muted">The purpose: don't force every customer into the same price. Give people a way to enter your ecosystem.</p>
+</section>
+
+<section>
+<h2>3. The $100 → $500 Experiment Lab</h2>
+<div class="grid">
+<div class="card experiment"><h3>Experiment A — Prints</h3><p><b>Input:</b> ~$100 printing</p><p><b>Model:</b> 20 prints × $20–25</p><p class="money">$400–$500 gross potential</p><label class="check"><input type="checkbox"> Choose artwork</label><label class="check"><input type="checkbox"> Get print cost</label><label class="check"><input type="checkbox"> Produce small batch</label><label class="check"><input type="checkbox"> Sell / collect data</label></div>
+<div class="card experiment"><h3>Experiment B — Commissions</h3><p><b>Input:</b> ~$75 materials</p><p><b>Model:</b> 3 commissions × $100</p><p class="money">$300 gross potential</p><label class="check"><input type="checkbox"> Create sample</label><label class="check"><input type="checkbox"> Post offer</label><label class="check"><input type="checkbox"> Collect deposits</label><label class="check"><input type="checkbox"> Deliver</label></div>
+<div class="card experiment"><h3>Experiment C — Event</h3><p><b>Input:</b> ~$100 promotion/materials</p><p><b>Model:</b> 5 vendors × $50</p><p class="money">$250 gross potential</p><label class="check"><input type="checkbox"> Define offer</label><label class="check"><input type="checkbox"> Contact vendors</label><label class="check"><input type="checkbox"> Collect fees</label><label class="check"><input type="checkbox"> Deliver value</label></div>
+<div class="card experiment"><h3>Experiment D — Digital Product</h3><p><b>Input:</b> ~$50 prototype cost</p><p><b>Model:</b> $15 × 20 sales</p><p class="money">$300 gross potential</p><label class="check"><input type="checkbox"> Pick one problem</label><label class="check"><input type="checkbox"> Build tiny product</label><label class="check"><input type="checkbox"> Launch</label><label class="check"><input type="checkbox"> Improve from sales</label></div>
+</div>
+</section>
+
+<section>
+<h2>4. Where Capital Should Go</h2>
+<table class="table">
+<tr><th>Use of capital</th><th>Priority</th><th>Rule</th></tr>
+<tr><td>Materials for already-paid work</td><td>🔥🔥🔥🔥🔥</td><td>Protect contracted revenue.</td></tr>
+<tr><td>Products you already know can sell</td><td>🔥🔥🔥🔥🔥</td><td>Proven beats exciting.</td></tr>
+<tr><td>Printing proven artwork</td><td>🔥🔥🔥🔥</td><td>Small batches first.</td></tr>
+<tr><td>Revenue-producing events</td><td>🔥🔥🔥🔥</td><td>Fund only what improves the economics.</td></tr>
+<tr><td>Advertising a proven offer</td><td>🔥🔥🔥</td><td>Don't advertise an untested offer.</td></tr>
+<tr><td>Digital products</td><td>🔥🔥🔥</td><td>Low cost, high margin.</td></tr>
+<tr><td>Website improvements</td><td>🔥🔥</td><td>Only if they improve conversion.</td></tr>
+<tr><td>New equipment</td><td>🔥🔥</td><td>Buy when it increases capacity or revenue.</td></tr>
+<tr><td>Experimental inventory</td><td>🔥</td><td>Prototype before stocking.</td></tr>
+<tr><td>Branding that doesn't create sales</td><td>🚫</td><td>Defer.</td></tr>
+</table>
+</section>
+
+<section>
+<h2>5. The Capital Filter</h2>
+<div class="card">
+<h3>Before spending $1, ask:</h3>
+<div class="score"><div>Does this directly produce revenue?<div class="bar"><div class="fill" style="--w:100%"></div></div></div><b>5</b></div>
+<div class="score"><div>Is there already demand?<div class="bar"><div class="fill" style="--w:90%"></div></div></div><b>5</b></div>
+<div class="score"><div>Can I sell it quickly?<div class="bar"><div class="fill" style="--w:80%"></div></div></div><b>4</b></div>
+<div class="score"><div>Can it be sold more than once?<div class="bar"><div class="fill" style="--w:70%"></div></div></div><b>3</b></div>
+<div class="score"><div>Does it build an asset?<div class="bar"><div class="fill" style="--w:70%"></div></div></div><b>3</b></div>
+<p><b>Decision rule:</b> Favor expenditures that score highly on revenue, demand and speed. Treat speculative purchases as experiments with a strict spending ceiling.</p>
+</div>
+</section>
+
+<section>
+<h2>6. Your Asset Stack</h2>
+<div class="grid">
+<div class="card"><h3>🎨 Art Library</h3><p>Originals, digital files, animal illustrations, characters, lettering, designs.</p></div>
+<div class="card"><h3>🌌 QuarkForce IP</h3><p>Characters, worlds, stories, products and recognizable visual language.</p></div>
+<div class="card"><h3>📚 Publishing</h3><p>QuarkZine, workbooks, comics, digital archives and collector editions.</p></div>
+<div class="card"><h3>🎪 Event Brands</h3><p>CanvasWars, MonsTober and future competitions.</p></div>
+<div class="card"><h3>👥 Audience</h3><p>Social followers, customers, collectors, students, artists and businesses.</p></div>
+<div class="card"><h3>🤝 Network</h3><p>Brands, sponsors, businesses, artists, venues and creative contacts.</p></div>
+</div>
+</section>
+
+<section>
+<h2>7. The Long Game</h2>
+<div class="hero">
+<p><b>CASH NOW</b> — commissions • murals • signs • illustration • events</p>
+<p>↓</p>
+<p><b>CASH LATER</b> — prints • merch • licensing • courses • digital products</p>
+<p>↓</p>
+<p><b>ASSET BUILDING</b> — QuarkForce IP • audience • apps • publishing • event brands</p>
+<p>↓</p>
+<p class="formula">A creative ecosystem that can earn without requiring every dollar to come from another hour of labor.</p>
+</div>
+</section>
+
+<section>
+<h2>8. Weekly Money Meeting</h2>
+<div class="card">
+<label class="check"><input type="checkbox"> What can I sell this week with almost no new spending?</label>
+<label class="check"><input type="checkbox"> What paid work is closest to closing?</label>
+<label class="check"><input type="checkbox"> What existing artwork can become a product?</label>
+<label class="check"><input type="checkbox"> Who are 10 potential commercial clients?</label>
+<label class="check"><input type="checkbox"> Who are 5 potential sponsors / partners?</label>
+<label class="check"><input type="checkbox"> What tiny experiment can I run for ≤ $100?</label>
+<label class="check"><input type="checkbox"> What did I sell last week?</label>
+<label class="check"><input type="checkbox"> What produced the highest return for the least effort?</label>
+<label class="check"><input type="checkbox"> What should I stop spending money on?</label>
+<label class="check"><input type="checkbox"> What asset did I build that can make money again?</label>
+</div>
+</section>
+
+<section>
+<h2>9. Priority Attack</h2>
+<div class="grid">
+<div class="card"><span class="pill">01 • FASTEST</span><h3>Commercial Illustration</h3><p>Sell finished visual capability to businesses, organizations and brands.</p></div>
+<div class="card"><span class="pill">02 • LEVERAGE</span><h3>Licensing</h3><p>Turn existing illustrations into repeatable commercial revenue.</p></div>
+<div class="card"><span class="pill">03 • AUDIENCE</span><h3>Events</h3><p>Turn creative events into sponsors + vendors + merch + content.</p></div>
+<div class="card"><span class="pill">04 • SCALE</span><h3>Digital Education</h3><p>QuarkUniversity and downloadable learning products.</p></div>
+<div class="card"><span class="pill">05 • ASSET</span><h3>Art / IP Products</h3><p>Build the recognizable JawsAtak / QuarkForce universe.</p></div>
+</div>
+</section>
+
+<section class="hero">
+<h2>The Rule</h2>
+<p class="formula">Every dollar is either fuel, inventory, or an asset.</p>
+<p>If it is none of those, question the purchase.</p>
+</section>
+
+<div class="footer">JawsAtak Money Engine • Built as a living tool — update the experiments, prices and results as the business evolves.</div>
+</main>
+
+<script>
+function show(type){
+ document.querySelectorAll('.engine').forEach(x=>{
+   x.classList.toggle('hidden', type!=='all' && !x.classList.contains(type));
+ });
+ window.scrollTo({top:document.querySelector('section').offsetTop-80,behavior:'smooth'});
+}
+</script>
+</body>
+</html>
